@@ -1,0 +1,36 @@
+<?php !class_exists('Aif') && die('view not valid');
+$web    = AifView::getPath();
+$images = "$web/img";
+$url     = AifRequest::getUrl('/');
+?>
+
+<?php
+ AifView::section('/usr/html/sections/video.phtml',get_defined_vars());
+ ?>
+ <?php
+ AifView::section('/usr/html/sections/header.phtml',get_defined_vars());
+ ?>
+ <?php
+ AifView::section('/usr/html/sections/about.phtml',get_defined_vars());
+ ?>
+ <?php
+ AifView::section('/usr/html/sections/qualification.phtml',get_defined_vars());
+ ?>
+ <?php
+ AifView::section('/usr/html/sections/skill.phtml',get_defined_vars());
+ ?>
+ <?php
+ AifView::section('/usr/html/sections/services.phtml',get_defined_vars());
+ ?>
+ <?php
+ AifView::section('/usr/html/sections/portfolio.phtml',get_defined_vars());
+ ?>
+ <?php
+ AifView::section('/usr/html/sections/testimonial.phtml',get_defined_vars());
+ ?>
+ <?php
+ AifView::section('/usr/html/sections/blog.phtml',get_defined_vars());
+ ?>
+ <?php
+ AifView::section('/usr/html/sections/contact.phtml',get_defined_vars());
+ ?>

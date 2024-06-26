@@ -1,0 +1,7 @@
+{
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.17",
+        "phpmailer/phpmailer": "^6.6",
+        "sendgrid/sendgrid": "^8.0"
+    }
+}

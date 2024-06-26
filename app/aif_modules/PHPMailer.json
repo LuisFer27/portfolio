@@ -1,0 +1,23 @@
+{
+    "version": "1.0.0",
+    "uid": "$uid$",
+    "name": "$name$",
+    "description": "",
+    "locale": "es",
+    "timezone": "America/Mexico_City",
+    "charset": "UTF-8",
+    "debugger": 7,
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "developer": {
+        "author": "$autor$ <mail@example.net>",
+        "maintainers": [
+            "$name$ <mail@example.net>"
+        ]
+    },
+    "class": {
+
+    }
+}

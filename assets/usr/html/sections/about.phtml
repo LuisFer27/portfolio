@@ -1,0 +1,37 @@
+<?php
+!class_exists('Aif')&&die('view not valid');
+$web=AifView::getPath();
+$url=AifRequest::getUrl('/');
+$images="$web/img";
+?>
+<!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Acerca de</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Acerca de mi</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-100" src="<?php echo $images?>/about.jpg" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-4">Desarrollador Jr</h3>
+                    <p>Soy un desarrollador jr con 2 años de experiencia en el área desarrollo de aplicaciones web de igual forma estoy buscando un trabajo en el que me ayude a ampliar más mi panorama en el desarrollo de aplicaciones tanto web como móviles.</p>
+                    <div class="row mb-3">
+                        <div class="col-sm-6 py-2"><h6>Nombre: <span class="text-secondary">Luis Fernando Mendez Barrera</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Año de nacimiento: <span class="text-secondary">27 de Agosto de 1998</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Último grado de estudios: <span class="text-secondary">Ingeniería</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Experiencia: <span class="text-secondary">2 Años</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Teléfono: <span class="text-secondary">+52 55 1522 9954</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Correo electrónico: <span class="text-secondary">luis.fernando.mendez.barrera2708@gmail.com</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Dirección: <span class="text-secondary">Cerrada Guerrero Sin Número,Colonia El Tráfico,Nicolas Romero,Estado de México,México</span></h6></div>
+                        <!--<div class="col-sm-6 py-2"><h6>Freelance: <span class="text-secondary">Available</span></h6></div>-->
+                    </div>
+                    <a href="" class="btn btn-outline-primary mr-4">Hire Me</a>
+                    <a href="" class="btn btn-outline-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->

@@ -1,0 +1,41 @@
+{
+    "version": "1.0.0",
+    "uid": "Anemona",
+    "name": "Usr",
+    "description": "",
+    "locale": "es",
+    "timezone": "America/Mexico_City",
+    "charset": "UTF-8",
+    "debugger": 0,
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "developer": {
+        "author": "$autor$ <mail@example.net>",
+        "maintainers": [
+            "$name$ <mail@example.net>"
+        ]
+    },
+    "class":{ 
+      "aif/debugger": "^1.0.0",
+      "aif/request": "",
+      "aif/response": "^1.0.0",
+      "aif/lib/convert": "^1.0.0",
+      "aif/html": "^1.0.0",
+      "aif/view": "^1.0.0",
+      "aif/session": "^1.0.0",
+      "aif/db": "^1.0.0",
+      "aif/lib": "^1.0.0",
+      "aif/sql": "^1.0.0",
+      "aif/sql/adapter/mysqli": "^1.0.0",
+      "aif/sql/abstract": "^1.0.0",
+      "aif/lib/file": "^1.0.0",
+      "aif/lang": "^1.0.0",
+      "aif/mailer": "^1.0.0",
+      "aif/cookie": "^1.0.0",
+      "composer":"",
+      "pearphp": "^1.0.0",
+      "phpmailer": "^1.0.0"
+    }
+  }
