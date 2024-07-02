@@ -1,9 +1,23 @@
 <?php
-!class_exists('Aif')&&die('view not valid');
-$web=AifView::getPath();
-$url=AifRequest::getUrl('/');
-$images="$web/img";
+!class_exists('Aif') && die('view not valid');
+$web = AifView::getPath();
+$url = AifRequest::getUrl('/');
+$images = "$web/img";
 ?>
+<!-- Google Web Fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="/portfolio/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/portfolio/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/portfolio/css/style.css" rel="stylesheet">
+
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
     <!-- Navbar Start -->
     <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
@@ -17,31 +31,31 @@ $images="$web/img";
             <div class="navbar-nav m-auto py-0">
                 <a href="#home" class="nav-item nav-link active">Home</a>
                 <a href="#about" class="nav-item nav-link">Acerca de</a>
-                <a href="#qualification" class="nav-item nav-link">Quality</a>
-                <a href="#skill" class="nav-item nav-link">Skill</a>
-                <a href="#service" class="nav-item nav-link">Service</a>
-                <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
-                <a href="#testimonial" class="nav-item nav-link">Review</a>
-                <a href="#blog" class="nav-item nav-link">Blog</a>
-                <a href="#contact" class="nav-item nav-link">Contact</a>
+                <a href="#qualification" class="nav-item nav-link">Experiencia</a>
+                <a href="#skill" class="nav-item nav-link">Habilidades</a>
+                <!--<a href="#service" class="nav-item nav-link">Servicios</a>-->
+                <a href="#portfolio" class="nav-item nav-link">Portafolio</a>
+                <!--<a href="#testimonial" class="nav-item nav-link">Reseña</a>-->
+                <!--<a href="#blog" class="nav-item nav-link">Blog</a>-->
+                <a href="#contact" class="nav-item nav-link">Contacto</a>
             </div>
             <a href="" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a>
         </div>
     </nav>
     <!-- Navbar End -->
-     <?php
-     AifView::content();
-     ?>
-         <!-- Footer Start -->
+    <?php
+    AifView::content();
+    ?>
+    <!-- Footer Start -->
     <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
         <div class="container text-center py-5">
             <div class="d-flex justify-content-center mb-4">
-                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                 <!--<a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>-->
+                <a class="btn btn-light btn-social mr-2" href="https://github.com/LuisFer27"><i class="fab fa-github"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/luis-fernando-méndez-barrera-211b59172"><i class="fab fa-linkedin-in"></i></a>
+                <!--<a class="btn btn-light btn-social" href="#"><i class="fab fa-instagram"></i></a>-->
             </div>
-            <div class="d-flex justify-content-center mb-3">
+            <!--<div class="d-flex justify-content-center mb-3">
                 <a class="text-white" href="#">Privacy</a>
                 <span class="px-3">|</span>
                 <a class="text-white" href="#">Terms</a>
@@ -49,10 +63,36 @@ $images="$web/img";
                 <a class="text-white" href="#">FAQs</a>
                 <span class="px-3">|</span>
                 <a class="text-white" href="#">Help</a>
-            </div>
-            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">Domain Name</a>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
+            </div>-->
+            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">Luis Fernando Mendez Barrera</a>. Todos los derechos Reservados <?php echo date('Y')?>. Plantilla diseñada por <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
             </p>
         </div>
     </div>
     <!-- Footer End -->
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+        <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="/portfolio/lib/typed/typed.min.js"></script>
+    <script src="/portfolio/lib/easing/easing.min.js"></script>
+    <script src="/portfolio/lib/waypoints/waypoints.min.js"></script>
+    <script src="/portfolio/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="/portfolio/lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="/portfolio/lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="/portfolio/mail/jqBootstrapValidation.min.js"></script>
+    <script src="/portfolio/mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="/portfolio/js/main.js"></script>
 </body>
