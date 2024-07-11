@@ -18,6 +18,7 @@
  public function __construct()
  {
     Aif::methodInApplication();
+    UsrConfig::init();
     UsrTemplate::init(self::$title);
  }
 
